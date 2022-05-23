@@ -1,0 +1,21 @@
+version: '3'
+
+networks:
+    bibbox-default-network:
+      external: true
+
+services:
+  bibbox-oc-gui:
+    image: karchinlab/opencravat:2.2.7
+    container_name: bibbox-oc-gui
+    volumes:
+      - './data/path/to/conf:/mnt/conf'
+      - './data/path/to/modules:/mnt/modules'
+      - './data/path/to/jobs:/mnt/jobs'
+      - './data/path/to/logs:/mnt/logs'
+    ports:
+    - '8080:8080'
+    networks:
+      - bibbox-default-network
+    command: ['oc', 'gui','--multiuser']
+
