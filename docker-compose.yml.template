@@ -21,6 +21,6 @@ services:
     proxy:
      TYPE: PRIMARY
      URLPREFIX: §§INSTANCE
-     TEMPLATE: default
+     TEMPLATE: websocket
      DISPLAYNAME: 'Open Cravat'  
 
