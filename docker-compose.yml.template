@@ -18,4 +18,9 @@ services:
     networks:
       - bibbox-default-network
     command: ['oc', 'gui','--multiuser']
+    proxy:
+     TYPE: PRIMARY
+     URLPREFIX: §§INSTANCE
+     TEMPLATE: default
+     DISPLAYNAME: 'Open Cravat'  
 
