@@ -1,36 +1,42 @@
-# Open Cravat BIBBOX application
+# open-cravat BIBBOX application
 
-This container can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en/latest/ "BIBBOX") or standalone.
- 
-After the installation follow these [instructions](INSTALL-APP.md)
+This container can be installed as [BIBBOX APP](https://bibbox.readthedocs.io/en/latest/ "BIBBOX App Store") or standalone. 
 
-## Hints
-* initial user/password: **admin / admin**
+- after the docker installation follow these [instructions](INSTALL-APP.md)
+
+## Standalone Installation 
+
+Clone the github repository. If necessary change the ports in the environment file `.env` and the volume mounts in `docker-compose.yml`.
+
+```
+git clone https://github.com/bibbox/app-open-cravat
+cd app-open-cravat
+docker-compose up -d
+```
+
+The main app can be opened and set up at
+```
+http://localhost:8080
+```
 
 ## Install within BIBBOX
 
-Within BIBBOX you can use the [BIBBOX](https://bibbox.readthedocs.io/en/latest/ "BIBBOX") to install a lot of software tools. After the installation is finished you can start your application in the dashboard.
+Visit the BIBBOX page and find the App by its name in the Store. Click on the symbol and select Install. Then fill the parameters below and name your app click install again.
 
-## Docker Images Used
- * [karchinlab/opencravat](https://hub.docker.com/r/karchinlab/opencravat), offical open-cravat-frontend container 
+## Docker Images used
+  - [karchinlab/opencravat](https://hub.docker.com/r/karchinlab/opencravat) 
+
+
  
-## Standalone Installation
+## Install Environment Variables
 
-To install the app locally execute the commands:
-* Clone the git repository: 
-  * `git clone https://github.com/bibbox/app-open-cravat`
-* Change the current directory to app-open-cravat: 
-  * `cd app-open-cravat/` 
-* Create the docker network `bibbox-default-network`: 
-  * `docker network create bibbox-default-network`
-* Run **docker-compose up** in the root folder of the project: 
-  * `docker-compose up -d`
-* **Alternatively** on a *Linux* system run the bash script `intsall.sh` after cloning and change the working directory to the git repository directory.
- 
+  
+The default values for the standalone installation are:
 
-After the installation (might take a few minutes) open **http://localhost:8080** in your browser to access Open Cravat.
-The default admin login is **user:admin/pw:admin**, this can be changed in `docker-compose.yml`.
-
+  
 ## Mounted Volumes
-* ./data/path/
-
+### karchinlab/opencravat Conatiner
+  - *./data/path/to/conf:/mnt/conf*
+  - *./data/path/to/modules:/mnt/modules*
+  - *./data/path/to/jobs:/mnt/jobs*
+  - *./data/path/to/logs:/mnt/logs*
