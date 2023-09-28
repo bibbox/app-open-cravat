@@ -35,7 +35,7 @@ The default values for the standalone installation are:
 
   
 ## Mounted Volumes
-### karchinlab/opencravat Conatiner
+### karchinlab/opencravat Container
   - *./data/path/to/conf:/mnt/conf*
   - *./data/path/to/modules:/mnt/modules*
   - *./data/path/to/jobs:/mnt/jobs*
