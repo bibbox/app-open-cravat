@@ -7,5 +7,5 @@
 	"application_url": "https://opencravat.org/",
 	"tags": ["Bioinformatics", "Analysis","varaiants","genetics"],
 	"application_documentation_url": "https://open-cravat.readthedocs.io/en/latest/",
-	"instance_information": "work in progress"
+	"instance_information": "<p> Open Cravat stands for: Open Custom Ranked Analysis of Variants Toolkit, which is a scalable decision support system to support variant and gene prioritization. It offers a dynamic GUI, allowing users to easily, download tools from an extensive resource catalog, create customized pipelines. </p> "
 }
