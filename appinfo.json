@@ -2,7 +2,7 @@
 	"name": "Open Cavat v2.2.7",
 	"short_name": "open Cravat",
 	"version": "v2.2.7",
-	"description": "Open Cravat is a tool for varaiant annotations with a nice web interface.",
+	"description": "Open Cravat is a tool for variant annotations with a nice web interface.",
 	"catalogue_url": "",
 	"application_url": "https://opencravat.org/",
 	"tags": ["Bioinformatics", "Analysis","varaiants","genetics"],
